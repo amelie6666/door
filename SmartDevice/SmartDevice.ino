@@ -2,9 +2,17 @@
 #include <SPI.h>
 #include <SD.h>
 
-// Real Time Clock (RTC)
-#include "RTClib.h"
-RTC_Millis rtc;     // Software Real Time Clock (RTC)
+// SD Card module
+#include <SPI.h>
+#include <SD. h>
+
+
+// Real Time Clock (RTC) 
+#include "RTClib"
+RTC_Millis rtc;   // Software Real Time Clock (RTC) 
+DateTime rightNow; // used to store the current time.
+
+// Software Real Time Clock (RTC)
 DateTime rightNow;  // used to store the current time.
 
 // SD Card - Confirm Pin
@@ -20,7 +28,7 @@ void setup() {
   // SD Card initialisation
   Serial.print("Initializing SD card...");
   if (!SD.begin(SDpin)) {
-    Serial.println("initialization failed!");
+    Serial.println("initialization failed!"); 
     while (1)
       ;
   }
@@ -28,4 +36,24 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+
+
+
+
+void panicRoom()
+void loop () { 
+
+
+  airConditioning()
+}
+  void airConditioning()
+}
+
+
+
+void drivewayNotificationSystemProcess () {
+
+
+
+  
 }
