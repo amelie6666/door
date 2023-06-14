@@ -7,9 +7,9 @@
 #include <SD. h>
 
 
-// Real Time Clock (RTC) 
+// Real Time Clock (RTC)
 #include "RTClib"
-RTC_Millis rtc;   // Software Real Time Clock (RTC) 
+RTC_Millis rtc;   // Software Real Time Clock (RTC)
 DateTime rightNow; // used to store the current time.
 
 // Software Real Time Clock (RTC)
@@ -28,7 +28,7 @@ void setup() {
   // SD Card initialisation
   Serial.print("Initializing SD card...");
   if (!SD.begin(SDpin)) {
-    Serial.println("initialization failed!"); 
+    Serial.println("initialization failed!");
     while (1)
       ;
   }
@@ -39,21 +39,54 @@ void loop() {
 
 
 
+  airConditioning();
 
-void panicRoom()
-void loop () { 
+  When the line sensor is touched, the air con turns on.
+  When the line sensor dectects no touch, turn the air con off.
+  drivewayNotificationSystemProcess();
 
 
-  airConditioning()
 }
-  void airConditioning()
-}
 
+/*
+ * 
+ * 
+ */
+
+void airConditioning() {
+  
+
+}
 
 
 void drivewayNotificationSystemProcess () {
 
 
 
-  
+
+
+
+
+
+
+
+  void panicRoom() {
+
+    //read crash sensor
+    //if true 
+     // output to piezo (pin 3)
+    //else 
+     //output notone pin 3
+  }
+
 }
+
+void 
+
+
+
+
+
+
+
+void
